@@ -1,14 +1,36 @@
-body {
+* {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5rem;
+    box-sizing: border-box;
 }
 
-p {
-    font-style: italic;
-    color: rgb(17, 3, 17);
+.imgvizitka {
+    border-radius: 50%;
+    float: left;
+    margin: 0 35px 0 0;
+}
+
+h2 {
+    color: darkgreen;
 }
 
 h1 {
+    color: rgb(19, 93, 116);
     font-weight: 900;
-    color: rgb(124, 3, 124);
+}
+
+.kontakt a:link {
+    color: black;
+}
+
+.kontakt a:hover {
+    color: darkgreen;
+}
+
+.predstaveni {
+    font-size: 1.25rem;
+}
+
+.predstaveni strong {
+    color: darkgreen;
 }
