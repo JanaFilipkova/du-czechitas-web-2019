@@ -1,0 +1,181 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px;
+    /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto;
+    /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.header-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 1rem;
+    font-family: "Source Sans Pro", Verdana, sans-serif;
+    color: #48418e;
+}
+
+.header-brand {
+    font-size: 1.2rem;
+    margin-right: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Source Sans Pro", Verdana, sans-serif;
+    color: #48418e;
+}
+
+.main-menu {
+    margin-right: auto;
+}
+
+.main-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu a {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    padding-right: 2.5rem;
+}
+
+.main-menu a:hover {
+    background-color: #47418e38;
+}
+
+.main-section {
+    background-image: url('images/pozadi.jpg');
+    background-repeat: no-repeat;
+    width: 960px;
+    height: 465px;
+    font-family: "Source Sans Pro", Verdana, sans-serif;
+    color: white;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    line-height: 2.5rem;
+}
+
+.main-section h1 {
+    font-size: 4.5rem;
+    font-weight: normal;
+}
+
+.main-section img {
+    float: right;
+    padding-top: 2rem;
+}
+
+.main-section p {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.button li {
+    display: inline-block;
+}
+
+.button a {
+    font-family: "Sourse Sans Pro", Verdana, sans-serif;
+    color: white;
+    font-size: 1rem;
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    border: solid 1px white;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px #25133d;
+}
+
+.download {
+    background-color: #48418e;
+}
+
+.information {
+    margin: 2rem;
+}
+
+.information a:hover {
+    background-color: #47418e38;
+}
+
+.text-section {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.text-section img {
+    width: 4rem;
+}
+
+.text-section h2 {
+    color: #48418e;
+}
+
+.cestuj {
+    width: 30%;
+}
+
+.chatuj {
+    width: 30%;
+}
+
+.zazij {
+    width: 30%;
+}
+
+.footer-copy {
+    background-color: #48418e;
+    padding: 0.2rem;
+}
+
+.footer-copy p {
+    font-family: "Source Sans Pro", Verdana, sans-serif;
+    font-size: 0.75rem;
+    color: white;
+    text-align: center;
+}
